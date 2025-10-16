@@ -1,0 +1,136 @@
+/* ===== Base Styling ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+/* ===== Input Section Styling ===== */
+.input-section {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.task-card {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.task-card input, 
+.task-card textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.task-card button {
+  padding: 12px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-card button:hover {
+  background-color: #45a049;
+}
+
+/* ===== Task Lists Section ===== */
+.lists-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.task-section h2 {
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.task-item {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.task-item.completed {
+  background: #d4edda;
+  text-decoration: line-through;
+  color: #555;
+}
+
+.task-item.overdue {
+  background: #f8d7da;
+}
+
+.task-item .task-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.task-item .task-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+.task-item small {
+  font-size: 12px;
+  color: #777;
+}
+
+.task-actions {
+  margin-top: 5px;
+}
+
+.task-actions button {
+  padding: 5px 8px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.edit-btn { background: #ff9800; color: white; }
+.delete-btn { background: #f44336; color: white; }
+.complete-btn { background: #4caf50; color: white; }
+.undo-btn { background: #2196f3; color: white; }
